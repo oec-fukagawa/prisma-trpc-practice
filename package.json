@@ -9,6 +9,9 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dep:graph": "depcruise --output-type dot . | dot -T svg -o docs/images/dependency-graph.svg"
+  },
+  "devDependencies": {
+    "dependency-cruiser": "^17.0.1"
   }
 }
